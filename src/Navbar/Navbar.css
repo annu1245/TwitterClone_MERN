@@ -8,10 +8,27 @@
     margin-left: 10%;
 }
 
-.nav-item a{
-    color : black;
+.bird{
+    color : #65cce9;
 }
 
-.bird{
-    color : #0791b8;
+.nav-item:hover{
+    transition: 0.1s;
+    border-radius: 30px;
+    background-color:rgb(195, 213, 248);
+}
+.nav-item a{
+    font-size: 1.4rem;
+    color: rgb(24, 16, 16);
+}   
+.more_svg{
+    width: 35px;
+    height: 35px;
+}
+.tweet_btn{
+    margin-top: 30px;
+    padding: 5px 60px 5px 60px;
+
+    border-radius: 50px;
+    background: rgb(2, 164, 204);
 }
