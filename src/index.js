@@ -7,11 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import Navbar from './Navbar/Navbar';
+import TwitBox from './Components/TwitBox';
+import Twitter from './Twitter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
+    <Twitter/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -4,14 +4,22 @@ import { useRef } from 'react';
 // import './nav.js';
 import autosize from 'autosize';
 
-
+import Home from '../Pages/Home';
 
 const Navbar = () => {
    const textRef = useRef();
+   const textRef_home = useRef();
+
    const onChangeHandler = function(e) {
    const target = e.target;
    textRef.current.style.height = "30px";
    textRef.current.style.height = `${target.scrollHeight}px`;
+   }
+
+   const onChangeHandler_home = function(e) {
+    const target = e.target;
+    textRef_home.current.style.height = "30px";
+    textRef_home.current.style.height = `${target.scrollHeight}px`;
  }
     return (
         <>
@@ -138,9 +146,9 @@ const Navbar = () => {
                         <hr/>
                 <div class="dropdown nav-item pe-3 ps-3 pt-2">
                     <a href="#" class="d-flex align-items-center text-black text-decoration-none " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"/>
-                        <span class="d-none d-sm-inline mx-3">loser</span>
-                        <span><img src = "./images/dot.svg" className = "mx-3"></img></span>
+                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle"/>
+                            <span class="d-none d-sm-inline mx-3">loser</span>
+                            <span><img src = "./images/dot.svg" className = "mx-3"></img></span>
                     </a>
                     <span className = "text-secondary mx-5">hi</span>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
@@ -155,44 +163,15 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+
         {/* middle section start */}
-        <div class="col-md-5 py-3 border">
-            <h4 className = "pb-3">Home</h4>
-            <div className = "row">
-                <div className = "mod_img col-md-4">
-                    <img className = "img-fluid" src="./images/profile.svg" alt="" />
-                </div>
-                <div className = "col-md-8">
-                    <textarea
-                        ref={textRef}
-                        onChange={onChangeHandler}
-                        className="text-area"
-                        row = "3"
-                        placeholder = "what's Happening.."
-                    />
-                </div>
-            </div>
-            <hr/>
-            <div className = "float-end">
-                <button className = "btn btn-primary">Tweet</button>
-            </div>
 
-            <hr className = "mid_section_hr"/>
-
-            <div>
-                <span></span>
-                <div className = "row">
-                    <div className = "mod_img col-md-4">
-                        <img className = "img-fluid" src="./images/profile.svg" alt="" />
-                    </div>
-                    <div className = "col-md-8">
-                        <p>hi</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-5 border py-3">
+            <Home/> 
         </div>
         {/* middle section end */}
-        <div class="col-md-4 py-3 ps-4">
+
+        <div class="col-md-4 py-3">
             <form class="d-flex">
                 <input class="form-control me-2 search_bar bg-light" type="search" placeholder="Search" aria-label="Search"/>
             </form>

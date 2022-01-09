@@ -32,9 +32,7 @@
     font-size: 1.2rem;
 }
 
-.border{
-    border-left: 1px solid black;
-}
+
 
 /* modal start */
 
@@ -60,8 +58,8 @@
 }
 
 .mod_img{
-    width: 12%;
-    height: 12%;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
 }
 .mod_img img{
@@ -142,6 +140,10 @@
 
     /* margine-left: -10px; */
     /* border-bottom: 1px solid black; */
+}
+
+.mid_div:hover{
+    background-color: rgb(180, 179, 179);
 }
 
 /* middle section end */
