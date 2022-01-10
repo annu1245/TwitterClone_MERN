@@ -15,7 +15,9 @@ import Twitter from './Twitter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Twitter/>
+    <BrowserRouter>
+      <Twitter/>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

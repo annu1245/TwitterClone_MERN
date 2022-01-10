@@ -5,9 +5,9 @@ const Home = () => {
     return (
         <>
         <h4 className = "pb-3">Home</h4>
-            <TwitBox/>
+            {/* <TwitBox/>
                 <hr className = "mid_section_hr"/>
-            <DetailContent/>      
+            <DetailContent/>       */}
         </>
     )
 }

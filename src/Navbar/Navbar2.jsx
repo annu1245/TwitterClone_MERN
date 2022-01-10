@@ -1,5 +1,6 @@
 import { useRef } from "react";
-
+import { NavLink, Link} from "react-router-dom";
+import './Navbar.css';
 const Navbar2 = () => {
 
         const textRef = useRef();
@@ -17,20 +18,20 @@ const Navbar2 = () => {
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item pe-3 ps-3">
-                        <a to="/" class="nav-link align-middle text-black px-0 pb-4">
+                        <NavLink exact to="/"   class="nav-link align-middle text-black px-0 pb-4">
                             <i class="fas fa-house-user pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
-                                Home
+                                    Home
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
                     <li class="nav-item pe-3 ps-3">
-                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle pb-4">
+                        <NavLink exact to = "/explore" class="nav-link px-0 align-middle pb-4">
                             <i class="fas fa-hashtag pe-3"></i> 
                             <span class="ms-1 d-none d-sm-inline">
                                 Explore
                             </span> 
-                        </a>
+                        </NavLink>
                     </li>
                     <li class="nav-item pe-3 ps-3">
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle pb-4">
