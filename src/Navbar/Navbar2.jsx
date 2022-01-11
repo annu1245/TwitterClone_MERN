@@ -17,65 +17,65 @@ const Navbar2 = () => {
                     <span class="d-none d-sm-inline"><i class="fab fa-2x fa-twitter bird"></i></span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item pe-3 ps-3">
-                        <NavLink exact to="/"   class="nav-link align-middle text-black px-0 pb-4">
+                    <li class="nav-item">
+                        <NavLink exact to="/"   class="nav-link align-middle text-black px-0 pb-2" style={{ textDecoration: 'none' }}>
                             <i class="fas fa-house-user pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
                                     Home
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <NavLink exact to = "/explore" class="nav-link px-0 align-middle pb-4">
+                    <li class="nav-item">
+                        <NavLink exact to = "/explore" class="nav-link px-0 align-middle pb-2">
                             <i class="fas fa-hashtag pe-3"></i> 
                             <span class="ms-1 d-none d-sm-inline">
                                 Explore
                             </span> 
                         </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle pb-4">
+                    <li class="nav-item">
+                        <NavLink to = "/notifications" class="nav-link px-0 align-middle pb-2">
                             <i class="far fa-bell pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
                                 Notifications
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <a href="#" class="nav-link align-middle px-0 pb-4">
+                    <li class="nav-item">
+                        <NavLink to ="/messages" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-envelope pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
-                                Message
+                                Messages
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <a href="#" class="nav-link align-middle px-0 pb-4">
+                    <li class="nav-item">
+                        <NavLink to="bookmarks" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-bookmark pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
                                 Bookmarks
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <a href="#" class="nav-link align-middle px-0 pb-4">
+                    <li class="nav-item">
+                        <NavLink to = "/lists" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-list-alt pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
                                 List
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
-                    <li class="nav-item pe-3 ps-3">
-                        <a href="#" class="nav-link align-middle px-0 pb-4">
+                    <li class="nav-item">
+                        <NavLink to = "/profile" class="nav-link align-middle px-0 pb-2">
                         <i class="far fa-user pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
                                 Profile
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
-                    <li class="nav-item p-2 ps-2">
+                    <li class="nav-item">
                         <div class="dropup">
-                            <a href="#" class="d-flex align-items-center text-black text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="d-flex align-middle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src = "./images/more.svg" className = "more_svg"></img>
                                     <span class="d-none d-sm-inline mx-3"> 
                                         More 
@@ -90,8 +90,8 @@ const Navbar2 = () => {
                             </ul>
                         </div>
                     </li>
-                    <li class="tweet_btn">
-                        <a href="#" class="nav-link align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <li class="nav-item t-btn">
+                        <a href="#" class=" tweet_btn align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <span class="ms-1 d-none d-sm-inline text-white fw-bold fs-5">
                                 Tweet
                             </span>
@@ -131,13 +131,27 @@ const Navbar2 = () => {
                     </div>
                 </ul>
             <hr/>
-                <div class="dropdown nav-item pe-3 ps-3 pt-2">
-                    <a href="#" class="d-flex align-items-center text-black text-decoration-none " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle"/>
-                            <span class="d-none d-sm-inline mx-3">loser</span>
-                            <span><img src = "./images/dot.svg" className = "mx-3"></img></span>
-                        </a>
-                    <span className = "text-secondary mx-5">hi</span>
+                <div class="dropdown nav-item">
+
+
+                    <div href="#" class="d-flex align-items-center text-black text-decoration-none " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className = "row">
+                            <div className = "col-md-3">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="40" height="40" className="rounded-circle"/>
+                            </div>
+                            <div className = "col-md-6">
+                                <div className = "row">
+                                    <div className = "col-md-12">loser</div>
+                                    <div className = "col-md-12 text-secondary">@loser</div>
+                                </div>
+                            </div>
+                            <div className = "col-md-3 gy-2">
+                                <img src = "./images/dot.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                         <li><a class="dropdown-item" href="#">New project...</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
