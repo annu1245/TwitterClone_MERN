@@ -151,7 +151,7 @@
     border: none !important;
 }
 .right_div a:hover{
-    background-color: rgb(204, 201, 201) !important;
+    background-color:rgb(233, 230, 230) !important;
 }
 
 
@@ -168,9 +168,33 @@
 }
 
 .mid_div:hover{
-    background-color: rgb(180, 179, 179);
+    background-color: rgb(233, 230, 230);
 }
 
 /* middle section end */
 
+/* right follow section start*/
 
+.follow_div{
+    border-radius: 30px;
+}
+
+.follow_btn{
+    font-weight: 500;
+    margin-top : 5px;
+    padding: 4px 15px 4px 15px;
+}
+
+.follow_div li {
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.follow_div li:hover{
+    background-color: rgb(233, 230, 230);
+    cursor: pointer;
+
+}
+
+/* right follow section end */

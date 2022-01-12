@@ -1,3 +1,5 @@
+import Follow from './Follow';
+
 
 const RightSection = () => {
     return (
@@ -39,6 +41,10 @@ const RightSection = () => {
                 <a href="#" class="list-group-item list-group-item-action bg-light">
                     <span>show more</span>
                 </a>
+            </div>
+
+            <div className = "follow_div bg-light">
+                <Follow/>
             </div>
         </>
     )
