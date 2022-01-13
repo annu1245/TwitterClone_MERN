@@ -130,7 +130,7 @@ const Navbar2 = () => {
                         </div>
                     </div>
                 </ul>
-            <hr/>
+        
                 <div class="dropdown nav-item">
 
 

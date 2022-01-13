@@ -32,7 +32,7 @@ const Twitter = () => {
                  {/* ---- left side end ----  */}
 
                 {/* ----- mid section start ------- */}
-                 <div className = "col-md-5 border py-4">
+                 <div className = "col-md-5 border mid_scroll">
                 <Routes>
                     <Route exact path = "/" element={<Home />} />
                     <Route exact path = "/explore" element={<Explore />} />

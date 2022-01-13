@@ -4,10 +4,11 @@ import DetailContent from '../Components/DetailContent';
 const Home = () => {
     return (
         <>
-        <h4 className = "pb-3">Home</h4>
+        <h4 className = "pb-3 sticky-top mid_div_up">Home</h4>
             <TwitBox/>
                 <hr className = "mid_section_hr"/>
-            <DetailContent/>      
+            <DetailContent/>  
+            <img src = "./images/book.jpeg" className = "img-fluid"/> 
         </>
     )
 }

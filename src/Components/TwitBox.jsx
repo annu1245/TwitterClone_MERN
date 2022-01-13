@@ -25,7 +25,7 @@ const TwitBox = () => {
                 />
             </div>
         </div>
-        <hr/>
+        
         <div className = "float-end">
             <button className = "btn btn-primary rounded-pill">Tweet</button>
         </div>
