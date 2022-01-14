@@ -2,7 +2,7 @@
 const DetailContent = () => {
     return (
         <>
-        <div className = "row mid_div py-3">
+        <div className = "row mid_div py-3"> 
         <div>
             <i class="fab fa-twitch mx-3 ms-4"></i>
             <span className = "text-muted fw-bold me-3">Technology</span>
