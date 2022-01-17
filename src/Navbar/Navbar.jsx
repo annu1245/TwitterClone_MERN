@@ -17,7 +17,7 @@ const Navbar2 = () => {
                     <span class="d-none d-sm-inline"><i class="fab fa-2x fa-twitter bird"></i></span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink exact to="/"   class="nav-link align-middle text-black px-0 pb-2" style={{ textDecoration: 'none' }}>
                             <i class="fas fa-house-user pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -25,7 +25,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink exact to = "/explore" class="nav-link px-0 align-middle pb-2">
                             <i class="fas fa-hashtag pe-3"></i> 
                             <span class="ms-1 d-none d-sm-inline">
@@ -33,7 +33,7 @@ const Navbar2 = () => {
                             </span> 
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink to = "/notifications" class="nav-link px-0 align-middle pb-2">
                             <i class="far fa-bell pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -41,7 +41,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink to ="/messages" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-envelope pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -49,7 +49,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink to="bookmarks" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-bookmark pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -57,7 +57,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink to = "/lists" class="nav-link align-middle px-0 pb-2">
                             <i class="far fa-list-alt pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -65,7 +65,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <NavLink to = "/profile" class="nav-link align-middle px-0 pb-2">
                         <i class="far fa-user pe-3"></i>
                             <span class="ms-1 d-none d-sm-inline">
@@ -73,7 +73,7 @@ const Navbar2 = () => {
                             </span>
                         </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item side_nav">
                         <div class="dropup">
                             <a href="#" class="d-flex align-middle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src = "./images/more.svg" className = "more_svg"></img>
@@ -90,7 +90,7 @@ const Navbar2 = () => {
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item t-btn">
+                    <li class="nav-item t-btn side_nav">
                         <a href="#" class=" tweet_btn align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <span class="ms-1 d-none d-sm-inline text-white fw-bold fs-5">
                                 Tweet
@@ -131,7 +131,7 @@ const Navbar2 = () => {
                     </div>
                 </ul>
         
-                <div class="dropdown nav-item">
+                <div class="dropdown nav-item side_nav">
 
 
                     <div href="#" class="d-flex align-items-center text-black text-decoration-none " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">

@@ -12,7 +12,7 @@ const Twitter = () => {
                 <div class="col-auto col-md-3 px-sm-2 px-0">
                     <Navbar/>
                 </div>
-                <div className = "col-md-5 mid_scroll">
+                <div className = "col-md-5 mid_scroll border">
                     <MidSection/>
                 </div>
                 <div className = "col-md-4 py-4">
