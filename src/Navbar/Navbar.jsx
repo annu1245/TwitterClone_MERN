@@ -12,8 +12,8 @@ const Navbar2 = () => {
         }
     return (
         <>
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-4 text-white min-vh-100">
-                <a href="/" class="d-flex align-items-center pb-4 mb-md-0 me-md-auto text-black text-decoration-none">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-2 mb-md-0 me-md-auto text-black text-decoration-none">
                     <span class="d-none d-sm-inline"><i class="fab fa-2x fa-twitter bird"></i></span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
@@ -137,7 +137,7 @@ const Navbar2 = () => {
                     <div href="#" class="d-flex align-items-center text-black text-decoration-none " id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <div className = "row">
                             <div className = "col-md-3">
-                                <img src="https://github.com/mdo.png" alt="hugenerd" width="40" height="40" className="rounded-circle"/>
+                                <img src="https://github.com/annu1245.png" alt="hugenerd" width="40" height="40" className="rounded-circle"/>
                             </div>
                             <div className = "col-md-6">
                                 <div className = "row">

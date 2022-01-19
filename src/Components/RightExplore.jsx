@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 const RightExplore = () => {
     return(
         <>
-            <SearchBar/>
+           
 
             <div className = "right_div bg-light">
                 <h4 className = "ps-3 py-3 fw-bold">What's Happining</h4>

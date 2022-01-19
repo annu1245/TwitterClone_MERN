@@ -19,14 +19,14 @@
 }
 
 .side_nav a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: rgb(24, 16, 16);
 }  
 
 .side_nav {
-    padding : 10px 15px 10px 15px;
-    margin-bottom: 10px;
+    padding : 5px 10px 5px 10px;
+    margin-bottom: 15px;
 }
 
 .more_svg{
@@ -44,7 +44,7 @@
 }
 
 .tweet_btn{
-    padding: 15px 85px 15px 85px;
+    padding: 10px 70px 10px 70px;
     border-radius: 50px;
     background: rgb(2, 164, 204);
 }
@@ -139,11 +139,11 @@
     height: 100%;
 }
 
-.search_bar{
-    border-radius: 30px;
-    font-size: 1.3rem;
-    border : none;
+.search{
+    border-radius: 30px !important;
 }
+
+
 
 .right_div {
     border-radius:20px;
@@ -238,11 +238,18 @@
 
 
 .exp_div li a:hover{
-    border-bottom: 2px solid black;
-    background-color: blanchedalmond;
-}
+    background-color: rgb(232, 247, 252);
+    border-bottom: 2px solid rgb(5, 134, 151);
+} 
 
 .exp_div li a {
     margin-right: 8px;
+    color : black;
 }
+
+.exp_div li a.active{
+    border-bottom: 2px solid rgb(5, 134, 151);
+    
+}
+
 
